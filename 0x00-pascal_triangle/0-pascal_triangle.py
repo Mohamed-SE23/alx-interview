@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 0-pascal_triangle
+This module contains a function to generate Pascal's triangle of a given number of rows.
 """
 
 
