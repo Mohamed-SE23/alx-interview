@@ -8,7 +8,13 @@ def pascal_triangle(n):
         """
         Returns a list of integers
         representing the Pascal Triangle of n
-        returns empty list if n <= 0
+        
+           Args:
+             n (int): The number of rows of Pascal's triangle to generate.
+                       
+           Returns:
+            list: A list of lists where each list represents a row of Pascal's triangle.
+                If n <= 0, an empty list is returned.
         """
         k = []
         if n <= 0:
