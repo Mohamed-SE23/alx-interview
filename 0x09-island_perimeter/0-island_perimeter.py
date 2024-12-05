@@ -51,3 +51,4 @@ def island_perimeter(grid):
                 perimeter += cell_perimeter
 
     return perimeter
+
