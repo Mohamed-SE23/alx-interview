@@ -24,13 +24,14 @@ def island_perimeter(grid):
         int: The perimeter of the island.
 
     Assumptions:
-                - The grid is completely surrounded by water.
-                - There is only one island (or nothing).
-                - The island does not have "lakes".
+        - The grid is completely surrounded by water.
+        - There is only one island (or nothing).
+        - The island does not have "lakes".
     """
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
+
 
     for r in range(rows):
         for c in range(cols):
@@ -45,6 +46,7 @@ def island_perimeter(grid):
                 if c < cols - 1 and grid[r][c + 1] == 1:
                     cell_perimeter -= 1
                 perimeter += cell_perimeter
+
 
     return perimeter
 
