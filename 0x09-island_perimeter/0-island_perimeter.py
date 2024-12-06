@@ -31,8 +31,6 @@ def island_perimeter(grid):
     rows = len(grid)
     cols = len(grid[0])
     perimeter = 0
-
-
     for r in range(rows):
         for c in range(cols):
             if grid[r][c] == 1:
@@ -46,6 +44,4 @@ def island_perimeter(grid):
                 if c < cols - 1 and grid[r][c + 1] == 1:
                     cell_perimeter -= 1
                 perimeter += cell_perimeter
-
-
     return perimeter
